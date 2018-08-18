@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="__CSS__/login.css" />
+<script src="__JS__/login.js"></script>
+</head>
+<body>
+<form action='__URL__/do_login' method='post' name='myForm'>
+用户名:<input type="text" name="username" value=""/><br/>
+密　码:<input type="password" name="password" /><br/>
+验证码:<input type="text" name="code" />
+<img src="__APP__/Public/code" onclick="this.src=this.src+'?'+Math.random" />
+<!-- Public 模块下的code 方法-->
+<br/>
+<img src='__Images__/login.gif' onclick='sub()'>
+</form>
+</body>
+</html>
